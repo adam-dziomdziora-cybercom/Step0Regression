@@ -36,14 +36,6 @@ namespace Step0Regression {
             var model = pipeline.Fit (trainingData);
             //
 
-            // 4. Make a prediction
-            var size = new HouseData () { Size = 2.5F };
-            var predictionEngine = mlContext.Model.CreatePredictionEngine<HouseData, Prediction> (model);
-            var price = predictionEngine.Predict (size);
-            //
-
-            Console.WriteLine ($"Predicted price for size: {size.Size * 1000} sq ft= {price.Price * 100:C}");
-
-        }
+          }
     }
 }
