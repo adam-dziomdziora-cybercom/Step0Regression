@@ -1,4 +1,4 @@
-name: Docker Master CI
+name: Docker CI/CD when PR to Master.
 
 on:
   pull_request:
